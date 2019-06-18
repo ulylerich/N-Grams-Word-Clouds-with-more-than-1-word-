@@ -6,6 +6,8 @@ library(RWeka)
 
 #Read Data
 com <- read.csv("comments.csv", header = T)
+
+#Create a corpus
 corpus <- Corpus(VectorSource(com$Responses))
 
 #clean Text for analysis
